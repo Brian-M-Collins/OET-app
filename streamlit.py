@@ -1,11 +1,9 @@
-pip install sdmx
+from io import BytesIO
 
 import pandas as pd
 import sdmx
-import pandas as pd
-import streamlit as st
 
-from io import BytesIO
+import streamlit as st
 
 pd.set_option("display.float_format", "{:.4f}".format)
 
@@ -127,6 +125,7 @@ def inset_blank_row(row_number, df, row_value):
     df.loc[row_number] = row_value
     df = df.sort_index()
     return df
+
 
 header_text = "OET Portfolio - Data Generation Tool"
 home = "Tool Home"
