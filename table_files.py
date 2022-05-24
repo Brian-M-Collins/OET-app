@@ -1,3 +1,5 @@
+pip install sdmx
+
 import pandas as pd
 import sdmx
 
